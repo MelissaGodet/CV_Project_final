@@ -1,0 +1,35 @@
+2nd step : 
+	1st layer : 16 filter -> 32 filters
+	2nd layer : 32 filter -> 64 filters (better)
+	
+3rd step : 
+	2nd layer and 3rd layer : core (2,2) -> (5,5) (less good)
+	
+4th step : 
+	Relu function -> LeakyReLU (less good)
+
+5th step : 
+	2nd layer : relu -> elu (better accuracy but less accurate placement for the bee position)
+	
+6th step :
+	3rd layer : relu -> elu and dropout to 0.7 (good but not better than the 2nd step)
+	
+7th step :
+	3rd layer : dropout to 0.7 (good but not better than the 2nd step)
+	
+8th step :
+	add of a 4th layer (less good)
+	
+9th step :
+	batch : 32 -> 64 (less good) 
+
+10th step :
+	batch : 64 -> 16 (better accurency and good placement)
+	
+----------------------------------------------------------------
+	
+Final step: 
+	epoch = 157
+	1st layer : 32 filters
+	2nd layer : 64 filters 
+	3nd layer : 64 filters 
